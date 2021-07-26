@@ -1,8 +1,13 @@
 
 
-  create or replace view `dbt-technical-training`.`dbt_aaron`.`customers`
+  create or replace table `dbt-technical-training`.`dbt_aaron`.`customers`
+  
+  
   OPTIONS()
-  as with customers as (
+  as (
+    
+
+with customers as (
 
     select * from `dbt-technical-training`.`dbt_aaron`.`stg_customers`
 
@@ -46,5 +51,6 @@ final as (
 
 )
 
-select * from final;
-
+select * from final
+  );
+    

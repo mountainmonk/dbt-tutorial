@@ -1,3 +1,5 @@
+
+
 with customers as (
 
     select * from `dbt-technical-training`.`dbt_aaron`.`stg_customers`
